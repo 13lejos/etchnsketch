@@ -1,6 +1,7 @@
+let inputSize;
+
 createGrid = function(){
     document.querySelectorAll('.cube').forEach(el => el.remove());
-    let inputSize;
     inputSize = document.getElementById('size').value;
 
     let size = 512/inputSize;
