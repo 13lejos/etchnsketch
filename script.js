@@ -1,6 +1,3 @@
-let inputSize;
-
-
 createGrid = function(){
     document.querySelectorAll('.cube').forEach(el => el.remove());
     let inputSize;
@@ -9,23 +6,18 @@ createGrid = function(){
     let size = 512/inputSize;
     let grid = (512/size)**2
     if(inputSize <2 || inputSize >100){
-        alert("sorry can't do that")
+        alert("sorry can't do that, pick from 2-100")
     }
     else{
         for (step = 0; step < grid; step++){
     const drawGrid = document.getElementById('etchContainer');
     let drawnGrid = document.createElement('div')
     drawnGrid.classList.add('cube')
-    drawnGrid.style.width = size+'px'
-    drawnGrid.style.height = size+'px'
+    drawnGrid.style.width = size
+    drawnGrid.style.height = size
     drawGrid.appendChild(drawnGrid)
-    drawnGrid.addEventListener('mouseover', colorSquare)
+    drawnGrid.addEventListener('mouseover',() => this.style.backgroundColor = 'black')
     
     }}
-}
-
-
-colorSquare = function(){
-    this.style.backgroundColor = 'black'
 }
 
