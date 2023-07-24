@@ -13,8 +13,8 @@ createGrid = function(){
     const drawGrid = document.getElementById('etchContainer');
     let drawnGrid = document.createElement('div')
     drawnGrid.classList.add('cube')
-    drawnGrid.style.width = size
-    drawnGrid.style.height = size
+    drawnGrid.style.width = size+'px'
+    drawnGrid.style.height = size+'px'
     drawGrid.appendChild(drawnGrid)
     drawnGrid.addEventListener('mouseover',() => this.style.backgroundColor = 'black')
     
