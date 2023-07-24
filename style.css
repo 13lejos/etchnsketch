@@ -46,12 +46,16 @@
   }
 
   #etchContainer{
+    display: flex;
+    flex:1, 0, 0;
+    flex-wrap: wrap;
     width: 512px;
     height: 512px;
+    outline: blue solid 1px;
   }
 
   .cube{
-    width: 16px;
-    height: 16px;
-    border: red solid 1px;
+
+    outline: red solid 1px;
   }
+
