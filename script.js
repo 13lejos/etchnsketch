@@ -16,7 +16,7 @@ createGrid = function(){
     drawnGrid.style.width = size+'px'
     drawnGrid.style.height = size+'px'
     drawGrid.appendChild(drawnGrid)
-    drawnGrid.addEventListener('mouseover',() => this.style.backgroundColor = 'black')
+    drawnGrid.addEventListener('mouseover',() => drawnGrid.style.backgroundColor = 'black')
     
     }}
 }
