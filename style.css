@@ -49,3 +49,9 @@
     width: 512px;
     height: 512px;
   }
+
+  .cube{
+    width: 16px;
+    height: 16px;
+    border: red solid 1px;
+  }
